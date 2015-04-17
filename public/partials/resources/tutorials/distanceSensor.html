@@ -1,0 +1,58 @@
+<a target="_self" href="style/pdf/usingDistanceSensor.pdf" class="btn btn-primary download" download="usingDistanceSensor.pdf">Download PDF</a>
+
+<h2>Using the Distance Sensor</h2>
+<ol class="ecs-tutorial">
+	<!-- 1 -->
+	<li><p>
+		In this tutorial, we will learn to use the board's distance sensor to control what our program do.
+		As in the other tutorials, begin by placing a <b>loop</b> block, found in the <b>Control</b> drawer.
+		</br>
+		<img src="style/images/tutorials/distance/1.png"/>
+	</p></li>
+    <!-- 2 -->
+    <li><p>
+		Place an <b>if</b> block, found in the <b>Control</b> drawer into the <b>loop</b>. This will determine
+		whether the <i>test</i> in the top of the block is true and execute the blocks in the <i>then</i>
+		socket if it is.
+		</br>
+        <img src="style/images/tutorials/distance/2.png"/>
+    </p></li>
+    <!-- 3 -->
+    <li><p>
+		Because our distance sensor block, <b>Get Distance</b>, returns a number for how far it is reading,
+		we will be comparing its value to a constant value. To do this, place a <b>Less Than (&lt;)</b> 
+		block in the <b>if</b> block's test field. You can find the <b>Less Than (&lt;)</b> block in the
+		<b>Logic Operators</b> block drawer.
+		</br>
+        <img src="style/images/tutorials/distance/3.png"/>
+    </p></li>
+    <!-- 4 -->
+    <li><p>
+		Place a <b>Get Distance</b> block (found in the <i>ECS</i> block drawer) in the left side of the
+		<b>Less Than (&lt;)</b> block and a constant 1000 in the right side. This 1000 value is fine for use
+		in this tutorial, but you will need to fine tune the constant to which you compare for an actual
+		project. The constant number block can be found in the <b>Variables/Constants</b> block drawer, 
+		and is set to 1 by default.
+		</br>
+        <img src="style/images/tutorials/distance/4.png"/>
+    </p></li>
+    <!-- 5 -->
+    <li><p>
+		Now that we have the basic frame of our program, we can make it do something. Place an 
+		<b>LED 1 On</b> block in the then field of the <b>if</b> block. Run your program and wave your 
+		hand above the shield. The distance sensor will recognize that an object is close to its sensor
+		and turn the light on. You've officially made your first project with the distance sensor!
+		</br>
+        <img src="style/images/tutorials/distance/5.png"/>
+    </p></li>
+    <!-- 6 -->
+    <li><p>
+		Our program is already interesting, but we can do better. To make the LED turn off again
+		when your hand is moved out of the distance sensor's beam, change your <b>if</b> block
+		to an <b>if/else</b> block to put an <b>LED 1 Off</b> block in the then field. Test your 
+		program and see how it works. Can you think of any ways to improve this design and make 
+		it do something more interesting?
+		</br>
+        <img src="style/images/tutorials/distance/6.png"/>
+    </p></li>
+</ol>

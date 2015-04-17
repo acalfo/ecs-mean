@@ -1,0 +1,52 @@
+Hi!
+
+So this is my Marquette Computer Science's Senior Design class project.
+
+MU ECS
+  Ecs aims to give low-income minority area public school kids the chance to
+  learn about computer science. Unfortunately, most computer science majors
+  are white males and through the ECS program more people get exposed to what
+  makes computer science cool and hopefully adds more awareness to these
+  communities about how easy it is to do if you know what direction to go in!
+
+  The final piece of the curriculum for the current ECS program is based on
+  Lego MindStorms hardware, however it is way to expensive for these low income
+  schools! Our replacement module costs only 45$ including an arduino leonardo!
+  Our pcb board connects directly onto the Arduino which plugs into computers via
+  USB. We also built Drag and Drop software based on MIT's scratch to allow students
+  to do thinks like drag a loop block into the program, and turn on pin 4 LED on and
+  then pin 4 LED off.
+  After running that program one of the lights on the hardware turns on and off.
+
+My responsibilities:
+
+1) Build the hardware (no EE majors joined our group so I volunteered)
+    Created preliminary schematics
+    Created prototype on breadboard
+    Used gEDA to create custom components
+    Created footprints for all the pre-built & custom components w/ measurements
+    Created PCB board design by importing components & creating traces
+    Mfged!
+
+2) Once it was manufactured me and another buddy on the team made the website!
+    Other team mate made some of the html files and through a php function in one of those files ><
+
+    I made the index.html file and the angular app/services
+
+    A couple days ago I built the mean stack around the angular app so now we have a frontend!!
+
+    Within the next few days I will be implementing roles in the User schema to facilate
+    teachers requesting an admin role to view special content like solutions to projects.
+
+      A) Teacher signs up and requests teacher status
+      B) Email is sent to our administrator that someone requested something
+          Teacher currently has a normal role assigned to him/her
+      C) Administrator, with the superAdmin role, is presented with a dashboard
+        where he can see newly signed up users requesting teacher status
+            Each user in dashboard will have information provided by the teacher
+            that they will use to authenticate whether the teacher is real or not
+                Eg) School, special code, ect.
+      D) When Admin clicks accept on a user's request the backend changes that user's
+          role to teacher
+      E) When users navigate to 'project solutions' pages they are authenticated before
+          routing to ensure their role is teacher. otherwise redirect

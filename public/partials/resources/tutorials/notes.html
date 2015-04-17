@@ -1,0 +1,56 @@
+<a target="_self" href="style/pdf/playingNotes.pdf" class="btn btn-primary download" download="playingNotes.pdf">Download PDF</a>
+
+<h2>Playing Notes</h2>
+<ol class="ecs-tutorial">
+	<!-- 1 -->
+    <li><p>
+		Because our programs have access to a speaker, they are able to play a series of
+		musical notes while they run. Like last time, begin by place a <b>loop</b> block, found in
+		the <b>Control</b> drawer.
+        <img src="style/images/tutorials/notes/1.png"/>
+    </p></li>
+	<!-- 2 -->
+    <li><p>
+		Place a <b>Play Note</b> block from the <b>ECS</b> drawer inside of the <b>loop</b>. Leave
+		the note as default, A.
+        <img src="style/images/tutorials/notes/2.png"/>
+    </p></li>
+	<!-- 3 -->
+    <li><p>
+		Click the <i>Upload to Arduino</i> button at the top of the program to load your program to
+		the board. When you reset the board, you will hear an A note playing forever. This isn't much
+		of a song, but we'l add to it throughout this tutorial.
+    </p></li>
+	<!-- 4 -->
+    <li><p>
+		We can change the note which plays by modifying the <b>Note</b> block connected to the right side
+		of our <b>Play Note</b> block. Please use the handout of available notes, which your teacher can provide
+		for you. The <b>Play Note</b> block and replace it with <b>Play Note Time</b>, also found in
+		the <b>ECS</b> drawer. This block plays the attached note for as long as the attached time says.
+		By default, it plays an A note for 1000 milliseconds, which is the same as 1 second. Go ahead
+		and try running your code again to hear the difference.
+        <img src="style/images/tutorials/notes/4.png"/>
+    </p></li>
+	<!-- 5 -->
+    <li><p>
+		As you can see from the notes handout, our programs have access to standard notes and sharps, 
+		and can play notes from a range of octaves. We can also specify specific frequencies as numbers
+		if we wish. To do so, use a <b>Play Frequency</b> or <b>Play Frequency Time</b> block, both of
+		which are found in the <b>ECS</b> drawer. They work in the same way as <b>Play Note</b> and
+		<b>Play Note Time</b>, but take numeric frequencies as inputs instead of letter names for notes.
+    </p></li>
+	<!-- 6 -->
+    <li><p>
+		Add notes to your melody to create a scale, as seen below. You will have the chance to create your
+		own song useing the <b>note</b> and <b>delay</b> blocks, but let's start with something simpler.
+        <img src="style/images/tutorials/notes/6.png"/>
+    </p></li>
+	<!-- 7 -->
+    <li><p>
+		Run the program again to hear how it works. You will hear a basic chromatic scale, repeating over
+		and over again. If there is still time left, explore the <b>note</b> and <b>frequency</b> blocks found
+		in the <b>ECS</b> drawer. You can combine these blocks with the <b>LED</b> blocks from the previous
+		tutorial to make a light pattern go along with your scale, or add <b>delay</b> blocks to insert
+		rests between your notes.
+    </p></li>
+</ol>

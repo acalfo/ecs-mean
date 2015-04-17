@@ -1,0 +1,80 @@
+<div ng-init="resetAuth()">	
+	<div ng-if="!authenticated">
+		<form name="auth" class="form-inline" style="height: 500px;">
+			<h1> 
+				This page is restricted to Teachers only
+			</h1>
+			<div class="row" style="margin-top:50px; margin-left:5px;">
+				<div class="form-group">
+				    <input type="text" class="form-control" style="width:250px;" placeholder="Enter your Teacher Secret" ng-model="secret" required>
+				</div>
+				<button type="submit" class="btn btn-default" ng-disabled="auth.$invalid" ng-click="handleAuth(secret)">Go!</button>
+			</div>
+			<div class="row" ng-if="error">
+				<p style="color:red; margin-left:20px; margin-top:20px; font-size:16px;">
+					That secret was incorrect. Your IP address has been logged.
+				</p>
+			</div>
+		</form>
+	</div>
+	<div class="ecs-tutorial" ng-if="authenticated">
+		<a target="_self" href="style/pdf/theremin.pdf" class="btn btn-primary download" download="theramin.pdf">Download PDF</a>
+
+		<h2>Sample Project 2 - Theremin</h2>
+		The Chip Tunes project is meant to introduce students to an instrument they probably
+		haven’t encountered before, making them think differently about music and consider the
+		interesting ways computers and humans can interact with one another. Unlike Project 1,
+		where most students should have been able to produce a basic program fairly quickly, the
+		Theremin may prove challenging for many students. Some may turn in programs which are
+		only half-functional while others may perfect designs which are novel in their approach or
+		include special features we did not plan for. The key detail for this project is that students
+		recognize how to use the <b>Get Distance</b> block and implement it in their programs in a way
+		which produces some kind of meaningful interaction between the student, his/her program,
+		and the shield’s distance sensor. Hopefully, this interaction can result in some interesting
+		music.
+
+		<h3>C</h3>
+		<img src="style/images/resources/sampleProjects/theremin/c.png"/>
+		</br>
+		Our “C” level program is a good example of the kind of basic program a student might
+		produce if he/she struggles with the concepts of the project. This program does use the
+		distance sensor, but only in a very basic way, turning the speaker on to play a pre-defined
+		note and never turning it off (until the Arduino is reset). Students should be encouraged for
+		getting the sensor to function and make the speakers do something, but you should help
+		them to understand how placing the value <b>Get Distance</b> returns in a variable and using it to
+		change the speaker’s note can make the program more interesting and interactive.
+		<h3>Video</h3>
+		TODO: C level video
+
+		<h3>B</h3>
+		<img src="style/images/resources/sampleProjects/theremin/b.png"/>
+		</br>
+		Our “B” level program takes advantage of a few more advanced features to make something
+		which is has a few problems but is much closer to a real Theremin. Students at this level
+		may still have problems with long delays between notes, pitches which are too high or too
+		low to be pleasant or easy to hear, and/or rough reading of user input, but their programs
+		use the distance value to change the speaker’s pitch. Generally speaking, this will mean that
+		the student has used a variable to store the <b>Get Distance</b> value, and that he/she has used
+		this variable with a <b>Play Frequency</b> block instead of a <b>Play Note</b> block so that his/her
+		program can change its frequencies.
+		<h3>Video</h3>
+		TODO: B level video
+
+		<h3>A</h3>
+		<img src="style/images/resources/sampleProjects/theremin/a.png"/>
+		</br>
+		For an “A” level program, students will take the time to try many different techniques and
+		arrive at a Theremin which can easily be played for pleasant results. These programs may
+		look quite different from our reference version, but they will all play clear tones based on
+		user input and will smoothly respond to changes in hand position. An “A” level project
+		should not play sounds if the student isn’t providing input, and this is usually managed
+		using an <b>if</b> block like in our example. Students may experiment with changes in the lights or
+		other aesthetic changes, but these are to be considered as bonuses and not required.
+		Students who produce very high quality Theremin programs should be congratulated and
+		allowed to demonstrate their work if they wish.
+		<h3>Video</h3>
+		TODO: A level video
+
+		
+	</div>
+</div>

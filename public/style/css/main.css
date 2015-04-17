@@ -1,0 +1,191 @@
+/* Space out content a bit */
+body {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Custom page header */
+.header {
+  border-bottom: 1px solid #e5e5e5;
+}
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 40px;
+  padding-bottom: 19px;
+}
+
+/* Custom page footer */
+.footer {
+  padding-top: 19px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+}
+
+/* Customize container */
+@media (min-width: 768px) {
+  .container {
+    max-width: 730px;
+  }
+}
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+}
+.jumbotron .btn {
+  font-size: 21px;
+  padding: 14px 24px;
+}
+
+/* Supporting marketing content */
+.marketing {
+  margin: 40px 0;
+}
+.marketing p + h4 {
+  margin-top: 28px;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 30px;
+  }
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+  }
+}
+
+/**
+  App specific styles
+ */
+
+.pdf-wrapper {
+  margin-left:-200px;
+}
+.ecs-links {
+  margin-right: 30px;
+  font-size: 20px;
+  margin-bottom:30px;
+}
+.ecs-header {
+  margin-top:40px;
+  font-size:42px;
+}
+.ecs-pdf-header {
+  font-size:36px;
+  margin: 0 !important;
+}
+.ecs-link-wrapper {
+  margin-top:30px;
+}
+.ecs-nav {
+  font-size:20px;
+}
+
+.mb2 {
+  float:left;
+  border-radius: 4px;
+  margin-left:2px;
+  margin-bottom:10px;
+}
+
+.py2 {
+  font-size:20px;
+  margin-right: 20px;
+  padding-left:15px;
+  padding-right:15px;
+  padding-top:15px;
+  padding-bottom:15px;
+}
+
+.py2:hover {
+  color: #fff;
+  background-color: #337ab7;
+  text-decoration:none;
+}
+
+.download {
+  margin-bottom:15px;
+  float:right;
+  font-size:18px;
+}
+
+.ecs-tutorial > li > p > img,
+.ecs-tutorial > img {
+	height: auto;
+	max-width: 100%;
+	margin: 20px;
+}
+
+.vcenter {
+  display: inline-block;
+  vertical-align: middle;
+  float: none;
+}
+
+.blue {
+  background-color: #337ab7 !important;
+  color: white !important;
+}
+
+.footer-ecs {
+  display:table !important;
+  width:100%;
+  height:50px;
+  padding-top:0px !important;
+  margin-top:50px;
+}
+
+.footer-ecs span {
+  vertical-align: middle !important;
+  display:table-cell;
+}
+.footer-left {
+    transform:translate(0,68%);
+}
+.ecs-heart {
+  padding-right:10px;
+}
+.nsf {
+  margin-left:5px;
+}
+.footer-right {
+  padding: 0px !important;
+}
+
+.faq-button {
+  display:table !important;
+  height:75px !important;
+  width:100% !important;
+  background-color:white;
+}
+
+.faq-button-title {
+  vertical-align: middle !important;
+  display:table-cell !important;
+  text-align:center !important;
+  font-size:18px !important;
+}

@@ -1,0 +1,68 @@
+<div ng-init="resetAuth()">	
+	<div ng-if="!authenticated">
+		<form name="auth" class="form-inline" style="height: 500px;">
+			<h1> 
+				This page is restricted to Teachers only
+			</h1>
+			<div class="row" style="margin-top:50px; margin-left:5px;">
+				<div class="form-group">
+				    <input type="text" class="form-control" style="width:250px;" placeholder="Enter your Teacher Secret" ng-model="secret" required>
+				</div>
+				<button type="submit" class="btn btn-default" ng-disabled="auth.$invalid" ng-click="handleAuth(secret)">Go!</button>
+			</div>
+			<div class="row" ng-if="error">
+				<p style="color:red; margin-left:20px; margin-top:20px; font-size:16px;">
+					That secret was incorrect. Your IP address has been logged.
+				</p>
+			</div>
+		</form>
+	</div>
+	<div class="ecs-tutorial" ng-if="authenticated">
+		<a target="_self" href="style/pdf/chipTunes.pdf" class="btn btn-primary download" download="chipTunes.pdf">Download PDF</a>
+		
+		<h2>Sample Project 1 - Chip Tunes</h2>
+		The Chip Tunes project is meant to serve as a gentle introduction to our programming
+		environment for the students. While there is plenty of room for creativity, nearly all
+		students should be able to create a working program which plays some kind of “song”. Our
+		example projects here are meant to show the kinds of creative improvements that students
+		can make to a basic, boring program. We hope your students will work hard and enjoy
+		themselves to produce some of their favorite tunes.
+
+		<h3>C</h3>
+		<img src="style/images/resources/sampleProjects/chipTunes/c.png"/>
+		</br>
+		Our “C” level program is perfectly functional for playing sound out of the speaker, but most
+		people would consider it boring or even kind of annoying. This program simply plays three
+		notes (A, B, C) over and over for one second each. Students who produce something this
+		simple should be encouraged to aim for a recognizable or pleasant melody and to consider
+		changing the lengths of their notes to produce more interesting songs.
+		<h3>Video</h3>
+		TODO: C level video
+		
+		<h3>B</h3>
+		<img src="style/images/resources/sampleProjects/chipTunes/b.png"/>
+		</br>
+		Our "B" level program improves upon the "C" level program by creating a more complex
+		and interesting song. These songs do not necessarily need to be very long, but they should
+		either be recognizable or interesting and pleasant to listen to. Students who produce
+		something at this level who still have time should be encouraged to make the song their 
+		own by adding LED blocks to their program or using loops and variables to make their
+		program more complicated and interesting.
+		<h3>Video</h3>
+		TODO: B level video
+
+		<h3>A</h3>
+		<img src="style/images/resources/sampleProjects/chipTunes/a.png"/>
+		</br>
+		Our "A" level program shows effort to make something unique and interesting. Please note
+		that the supplied example program is only part of a larger program, and many “A” level
+		programs will be longer than “B” and “C” level ones in order to create longer songs. Students
+		at this level will show mastery of blocks which create loops, delays, and potentially the use
+		of variables to set pitches or the tempo of the song. Songs at this level should be melodic,
+		and will often be real songs students create by converting from sheet music or note names
+		found online. Many students at this level will make their programs more fun by
+		implementing the LEDs for a visual component of the program. Students who create work at
+		this level should be commended for going above and beyond and strongly encouraged to do
+		so on the other projects.
+	</div>
+</div>

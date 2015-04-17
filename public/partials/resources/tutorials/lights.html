@@ -1,0 +1,52 @@
+<a target="_self" href="style/pdf/usingLights.pdf" class="btn btn-primary download" download="usingLights.pdf">Download PDF</a>
+
+<h2>Blinking the Lights</h2>
+<ol class="ecs-tutorial">
+	<!-- 1 -->
+	<li><p>
+		Place a <b>loop</b> block, found in the <b>Control</b> drawer. We want our program to loop over
+		and over again until we turn the power off in order to match the sample program we just saw.
+		<img src="style/images/tutorials/usinglights/1.png"/>
+	</p></li>
+	<!-- 2 -->
+	<li><p>
+		Place a block to <b>Turn LED 1 On</b> inside of the <b>loop</b> block. This can be found in the
+		<b>ECS</b> block drawer, and will turn the LED on.
+		<img src="style/images/tutorials/usinglights/2.png"/>
+	</p></li>
+	<!-- 3 -->
+	<li><p>
+		Click the <i>Upload to Arduino</i> button at the top of the program to load your program to the
+		board. When you reset the board, you will see that the first (red) LED is turned on. This is a 
+		good start, but we want our LED to blind on and off, not just stay on.
+	</p></li>
+	<!-- 4 -->
+	<li><p>
+		In order to blink the LED, we need to turn it off after we turn it on. Place a <b>Turn LED 1 Off</b> 
+		block after the <b>Turn LED 1 On</b> block inside of the <b>loop</b>.
+		<img src="style/images/tutorials/usinglights/4.png"/>
+	</p></li>
+	<!-- 5 -->
+	<li><p>
+		It may seem like this is the entire program. Let's give it a try and see how it runs. Just
+		as before, click the <i>Upload to Arduino</i> button at the top of the program to load your program
+		to the board.
+	</p></li>
+	<!-- 6 -->
+	<li><p>
+		Does the program behave the way you expected it to? What happened when you ran the code? Though
+		it seems finished, our program will turn the LED on and then off so quickly that we don't be able
+		to see what is happening. Place a <b>delay MILLIS</b> block (which can be found in the <b>ECS</b> drawer)
+		after the <b>Turn LED 1 On</b> block. Place another after the <b>Turn LED 1 Off</b> block. These
+		will make the program wait in between blocks, with the default wait time set to 1 second.
+		<img src="style/images/tutorials/usinglights/6.png"/>
+	</p></li>
+	<!-- 7 -->
+	<li><p>
+		Run the program again to see how the delays have changed it. You will see that now have a program
+		which blinks the red LED on and off forver, until the power is turned off. Congratulations on 
+		completing your first Ardublock project! If there is still time left, explore the other LED blocks
+		found in the <b>ECS</b> drawer and use them, along with changes to the delay pattern and lengths,
+		to make your own variation on this project.
+	</p></li>
+</ol>

@@ -1,0 +1,57 @@
+<a target="_self" href="style/pdf/usingButtons.pdf" class="btn btn-primary download" download="usingButtons.pdf">Download PDF</a>
+
+<h2>Using the Buttons</h2>
+<ol class="ecs-tutorial">
+	<!-- 1 -->
+	<li><p>
+		In this tutorial, we will learn to use the board's buttons to control what our programs do.
+		As in the other tutorials, begin by placing a <b>loop</b> block, found in the <b>Control</b>
+		drawer.
+		<img src="style/images/tutorials/buttons/1.png"/>
+	</p></li>
+    <!-- 2 -->
+    <li><p>
+		Place an <b>if</b> block, found in the <b>Control</b> drawer into the <b>loop</b>. This will
+		determine whether the <i>test</i> in the top of the block is true and execute the blocks in
+		the <i>then</i> socket if it is.
+        <img src="style/images/tutorials/buttons/2.png"/>
+    </p></li>
+    <!-- 3 -->
+    <li><p>
+		Let's start by making the <b>if</b> check to see if the button is pressed. Place a <b>Button
+        Pressed</b> block, found in the <b>ECS</b> drawer, inside the <i>test</i> socket of the <b>if</b> block.
+        This block will return a true value only while the button is pressed, so whatever we place
+        in the <i>then</i> socket will execute when we press button 1.
+        <img src="style/images/tutorials/buttons/3.png"/>
+    </p></li>
+
+    <!-- 4 -->
+    <li><p>
+		Place a <b>Turn LED 1 On</b> block into the <i>then</i> socket.
+        <img src="style/images/tutorials/buttons/4.png"/>
+    </p></li>
+
+    <!-- 5 -->
+    <li><p>
+		Run the program to test how it works. When you press button 1, you will see the LED light up.
+		The main problem with this program right now is that the LED stays on forever, so we can only
+		test it out once without resetting.
+    </p></li>
+
+    <!-- 6 -->
+    <li><p>
+		Replace the <b>if</b> block with an <b>if/else</b> block and place a <b>Turn LED 1 Off</b> block in
+		the <i>else</i> socket. This will execute if the button isn't being pushed, so our new program 
+		will only light the LED while the button is pushed.
+        <img src="style/images/tutorials/buttons/6.png"/>
+    </p></li>
+
+    <!-- 7 -->
+    <li><p>
+		Run the program again to test this. Now that you have a program which executes one set of blocks
+		if the button is pushed and another set if it isn't, you can use the other available blocks to make
+		your own variation of this program. Consider using multiple <b>if/else</b> blocks to use the multiple
+		buttons available on the board. Have fun!
+    </p></li>
+
+</ol>

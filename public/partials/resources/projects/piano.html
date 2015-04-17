@@ -1,0 +1,62 @@
+<div ng-init="resetAuth()">	
+	<div ng-if="!authenticated">
+		<form name="auth" class="form-inline" style="height: 500px;">
+			<h1> 
+				This page is restricted to Teachers only
+			</h1>
+			<div class="row" style="margin-top:50px; margin-left:5px;">
+				<div class="form-group">
+				    <input type="text" class="form-control" style="width:250px;" placeholder="Enter your Teacher Secret" ng-model="secret" required>
+				</div>
+				<button type="submit" class="btn btn-default" ng-disabled="auth.$invalid" ng-click="handleAuth(secret)">Go!</button>
+			</div>
+			<div class="row" ng-if="error">
+				<p style="color:red; margin-left:20px; margin-top:20px; font-size:16px;">
+					That secret was incorrect. Your IP address has been logged.
+				</p>
+			</div>
+		</form>
+	</div>
+	<div class="ecs-tutorial" ng-if="authenticated">
+	<a target="_self" href="style/pdf/piano.pdf" class="btn btn-primary download" download="piano.pdf">Download PDF</a>
+
+	<h2>Sample Project 3 - Piano</h2>
+	<h3>C</h3>
+	<img src="style/images/resources/sampleProjects/piano/c.png"/>
+	</br>
+	A basic “C” implementation of Project 3 generally includes functionality for only some of the
+	buttons or doesn’t allow easy use of multiple buttons simultaneously or in quick succession.
+	Once students have figured out how to comfortably use the shield’s buttons to interact with
+	the speaker, they should be encouraged to make their basic program work as well as
+	possible with multiple notes available and easy use. After this, they can add other features
+	or consider experimenting with the keyboard blocks.
+	<h3>Video</h3>
+	TODO: C level video
+
+	<h3>B</h3>
+	<img src="style/images/resources/sampleProjects/piano/b.png"/>
+	</br>
+	A “B” implementation of Project 3 is one which works well but does only the minimum for
+	the project. The buttons can all be used to play notes (which play cleanly and are easy to
+	transition between), but the student may not have used his/her creativity to make the
+	project his/her own. Students at this level should be encouraged to use the LEDs or try to
+	use the keyboard in order to make their programs more fun and interesting.
+	<h3>Video</h3>
+	TODO: B level video
+
+	<h3>A</h3>
+	<img src="style/images/resources/sampleProjects/piano/a.png"/>
+	</br>
+	For an A on Project 3, students should again go above and beyond the basic requirements.
+	An "A" level piano project will work consistently and well to recognize button presses and
+	play notes. It will also do something interesting and extra, whether that is lighting up the
+	LEDs which correspond to the buttons, making use of the keyboard blocks to use the
+	keyboard in addition to (or instead of) the buttons, using the distance sensor somehow, or
+	allowing multiple buttons to be used at once for different notes to play. Students
+	comfortable enough with block programming to produce "A" level piano projects should be
+	encouraged to pursue programming themselves, since they will have a good understanding
+	of the fundamentals based on their mastery of this course and its projects.
+	<h3>Video</h3>
+	TODO: A level video
+	</div>
+</div>

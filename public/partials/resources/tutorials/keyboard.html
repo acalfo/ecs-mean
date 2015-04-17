@@ -1,0 +1,59 @@
+<a target="_self" href="style/pdf/usingKeyboard.pdf" class="btn btn-primary download" download="usingKeyboard.pdf">Download PDF</a>
+
+<h2>Using the Keyboard</h2>
+<ol class="ecs-tutorial">
+    <!-- 1 -->
+    <li><p>
+        In this tutorial, we will learn to control what our programs do on the Arduino using
+		input from a keyboard. As in the other tutorial, you need to start by placing your first
+		block. Unlike the other tutorials, though, where you used a <b>loop</b> block which repeated
+		its code forever, this tutorial will use a <b>program</b> block, also found in the <b>Control</b>
+		drawer. This block works similarly to <b>loop</b>, but its setup code will run once before
+		the loop begins. Inside the setup field, place a <b>Set Up Keyboard</b> block, found in the
+		<b>ECS</b> block drawer. This block must be place at the beginning of the setup field of
+		any program which uses the keyboard.
+		</br>
+		<img src="style/images/tutorials/keyboard/1.png"/>
+    </p></li>
+    <!-- 2 -->
+    <li><p>
+		Place an <b>Update Keyboard</b> block at the beginning of the <b>program</b> block's loop field.
+		This block updates the communication between the keyboard and the Arduino and must be used
+		whenever a fresh value should be read.
+		</br>
+        <img src="style/images/tutorials/keyboard/2.png"/>
+    </p></li>
+
+    <!-- 3 -->
+    <li><p>
+		Now that we have the two setup blocks in place, we are ready to start reading from the keyboard.
+		Place an <b>if/else</b> block beneath the <b>Update Keyboard</b> block so we can do one thing if 
+		the key we are looking for is pressed and another if it is not. Also place a <b>Key Pressed</b>
+		block in the test field of the <b>if/else</b>, allowing us to test whether the 'a' key on the 
+		keyboard is being pressed.
+		</br>
+        <img src="style/images/tutorials/keyboard/3.png"/>
+    </p></li>
+
+    <!-- 4 -->
+    <li><p>
+		As we have done in other tutorials, place an <b>LED 1 On</b> block in the <i>then</i> field of
+		the <b>if/else</b> block and an <b>LED 1 Off</b> block in the <i>else</i> field. This will turn
+		the first LED on while the 'a' key is pressed and turn it off the rest of the time. Despite
+		providing many options for controlling your programs, using the keyboard is that easy. You're
+		ready to upload your program to the Arduino and try it out.
+		</br>
+        <img src="style/images/tutorials/keyboard/4.png"/>
+    </p></li>
+
+    <!-- 5 -->
+    <li><p>
+		when your program runs, a window labeled "ECS Keyboard" will pop up on your computer screen.
+		Keys typed into this window will be sent to the Arduino when the <b>Update Keyboard</b> block is used.	
+		If you have time, try testing for other keys or making other outputs result from the keyboard input.
+		</br>
+        <img src="style/images/tutorials/keyboard/5.png"/>
+    </p></li>
+
+
+</ol>

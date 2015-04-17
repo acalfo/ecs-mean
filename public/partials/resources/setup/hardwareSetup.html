@@ -1,0 +1,71 @@
+<a target="_self" href="style/pdf/hardwareSetup.pdf" class="btn btn-primary download" download="hardwareSetup.pdf">Download PDF</a>
+
+<h2>Hardware Setup</h2>
+<h3>NOTE: Arduino Driver installation requires administrator privileges.</h3>
+<ol>
+	<li><p>
+		Download the MUzECS software <a href="resources/ardublock-windows.zip" download="muzecs_software.zip">
+		here</a>.
+	</p></li>
+	<li><p>
+		Unzip muzecs_software.zip and remember where you choose to save the unzipped folder.
+	</p></li>
+	<!-- 1 -->
+	<li><p>
+		Connect the Arduino Leonardo to the computer with a micro USB cable. You should see an item appear
+		in the taskbar on the bottom of the screen. Wait for this to finish and go away.
+	</p></li>
+	<!-- 2 -->
+	<li><p>
+		When this is finished, open the Device Manager. This can be done by click the windows button
+		in the bottom of the screen (or pressing the windows key on the keyboard) and typing "Device Manager"
+		into the search bar.
+	</p></li>
+	<!-- 3 -->
+	<li><p>
+		You should see the Arduino Leonardo listed under "Other Devices". Right click on "Arduino Leonardo"
+		and select "Update Driver Software". A window should appear presenting you with two options: Find
+		drivers online or browse your computer for driver software.
+	</p></li>
+	<!-- 4 -->
+	<li><p>
+		Select the "Browse my computer for driver software" option.
+	</p></li>
+	<!-- 5 -->
+	<li><p>
+		Click "Browse" and find the folder labeled "drivers" inside of the folder that you unzipped in step 2.
+		After selecting the "drivers" folder, make sure that "Include subfolders" is checked in the window
+		that appears afterward, then click Next.
+	</p></li>
+	<!-- 6 -->
+	<li><p>
+		A popup will appear that asks if you would like to install this device software. Click "Install".
+	</p></li>
+	<!-- 7 -->
+	<li><p>
+		The Arduino drivers should be installed at this point. Verify this by verifying that "Arduino Leonardo"
+		is now listed under "Ports (COM &amp; LPT)" instead of "Other Devices". 
+		</br>
+		To test, run the Arduino application (arduino.exe)
+		from the folder you unzipped in step 2. A Windows firewall alert will appear regarding Java requesting
+		access to the internet. <b>Click "Cancel" to dismiss this window</b>. If you allow access then you will
+		likely receive a popup about updating Arduino each time you open the program and the MUzECS team has
+		not yet verified that this update process works correctly, so it's best to just disallow it for now.
+	</p></li>
+	<!-- 8 -->
+	<li><p>
+		Click on Tools in the menu and select the Arduino Leonardo as your Board and the appropriate COM port
+		for the device.
+		</br>
+		<ul>
+			<li><p>
+				If you do not see "COM# (Arduino Leonardo)" as an option under Tools &gt; Port, then we must 
+				find out which port number to select. To do this, open the Device Manager just as you did before.
+				Find "Arduino Leonardo" under "Ports (COM &amp; LPT)". The COM port will be listed alongside 
+				"Arduino Leonardo".
+			</p></li>
+		</ul>
+	</p></li>
+
+
+</ol>

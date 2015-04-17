@@ -1,0 +1,5 @@
+<h3 class="ecs-header">Handouts</h3>
+<ul class="nav ecs-link-wrapper row">
+    <li ng-repeat="item in handouts" ng-class="navClass('{{item.path}}')" class="ecs-links md-col-12"> <a href='#/{{item.path}}'> <span ng-bind="item.text"></span></span></a>
+    </li>
+</ul>

@@ -1,0 +1,7 @@
+<a target="_self" href="resources/resources.zip" class="btn btn-primary download" download="MUzECS_resources.zip">Download all PDFs</a>
+
+<h3 class="ecs-header">Resources</h3>
+<ul class="nav ecs-link-wrapper row">
+    <li ng-repeat="item in resources" ng-class="navClass('{{item.path}}')" class="ecs-links md-col-12"> <a href='#/{{item.path}}'> <span ng-bind="item.text"></span></span></a> 
+    </li>
+</ul>

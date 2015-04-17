@@ -1,0 +1,79 @@
+<a target="_self" href="style/pdf/errorMessages.pdf" class="btn btn-primary download" download="errorMessages.pdf">Download PDF</a>
+
+<div class="ecs-tutorial">
+
+<h2>Helping With Error Messages</h2>
+<h3>Invalid button used in block</h3>
+Students are able to read whether a button is being pressed on the shield with the <b>Button Pressed</b>
+block and a specified block number. Because there are four buttons on the shield, valid inputs to 
+the <b>Button Pressed</b> block are the numbers 1 - 4. If a student uses another number, they will
+see the following error:
+</br>
+<img src="style/images/resources/errorMessages/invalidButton.png"/>
+</br>
+
+<h3>Unrecognized key used in block</h3>
+Students are able to read from the computer keyboard with the <b>Set Up Keyboard</b>, <b>Update Keyboard</b>,
+and <b>Key Pressed</b> blocks. The <b>Key Pressed</b> block takes a <b>Key</b> block as an input, and valid 
+inputs are a - z and 0 - 9. If a student uses a different key value, they will see the following error:
+</br>
+<img src="style/images/resources/errorMessages/invalidKey.png"/>
+</br>
+
+<h3>Unrecognized note used in block</h3>
+Students are able to play notes from the shield's speaker using the <b>Play Note</b>, <b>Play Note Time</b>,
+<b>Play Frequency</b>, and <b>Play Frequency Time</b> blocks. They <b>Play Note</b> and <b>Play Note Time</b> 
+take <b>Note</b> blocks as input, which can be set to any of the note names found on the "List of Note Names"
+handout. If a student uses a note name not found on that list, they will see the following error:
+</br>
+<img src="style/images/resources/errorMessages/invalidNote.png"/>
+</br>
+
+<h3>Invalid pin used in block</h3>
+Advanced students using blocks from the <i>Advanced (Pins)</i> menu must specify the pin
+number for the blocks’ inputs. These pins must either correspond to the pins of the
+peripherals already on the shield or fall within the range of free pins (18 – 23). If an invalid
+pin is used, students will see the following error: 
+</br>
+<img src="style/images/resources/errorMessages/invalidPin.png"/>
+</br>
+
+<h3>A required Value, Variable Name or 'Test' is missing</h3>
+Advanced students using blocks from the <i>Advanced (Pins)</i> menu must specify the pin
+number for the blocks’ inputs. These pins must either correspond to the pins of the
+peripherals already on the shield or fall within the range of free pins (18 – 23). If an invalid
+pin is used, students will see the following error: 
+</br>
+<img src="style/images/resources/errorMessages/missingTest.png"/>
+</br>
+
+<h3>No loop found!</h3>
+All Ardublock programs must start with either a <b>Program</b> block or a <b>Loop</b> block.
+If student code isn't within one of these blocks, the following message will display:
+</br>
+<img src="style/images/resources/errorMessages/noLoopFound.png"/>
+</br>
+
+<h3>Multiple loop block found</h3>
+Ardublock programs must only have one <b>Program</b> block. Other methods can be
+implemented using the <b>Subroutine</b> blocks. If a student’s code features multiple top level
+<b>Loops</b>, the following message will display:
+</br>
+<img src="style/images/resources/errorMessages/multipleLoop.png"/>
+</br>
+
+<h3>Invalid variable name used</h3>
+Variables in Ardublock must be declared before they are used. For integer, decimal, and boolean variables, this
+is done using the <b>Set &lt;type&gt; variable</b> blocks. For arrays, the <b>Create an integer array</b> block. If a variable is referenced before it is declared, a message similar to the following will appear:
+</br>
+<img src="style/images/resources/errorMessages/invalidNumberVariable.PNG"/>
+</br>
+Error messages of this flavor will provide a hint as to what went wrong and provide the name of the invalid variable that the Ardublock program tried to reference.
+
+<h3>Invalid array name used</h3>
+Arrays in Ardublock programs must be uniquely named. If a student attempts to create two integer arrays with 
+the same name, the following message will appear:
+</br>
+<img src="style/images/resources/errorMessages/invalidArrayNameCreate.PNG"/>
+
+</div>
